@@ -1,0 +1,13 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="1st Goal <= 26.688\ngini = 0.499\nsamples = 89\nvalue = [43, 46]\nclass = No Man of the Match", fillcolor="#399de511"] ;
+1 [label="Off-Target <= 5.355\ngini = 0.478\nsamples = 48\nvalue = [29, 19]\nclass = Man of the Match", fillcolor="#e5813958"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+3 [label="gini = 0.494\nsamples = 27\nvalue = [15, 12]\nclass = Man of the Match", fillcolor="#e5813933"] ;
+1 -> 3 ;
+4 [label="gini = 0.444\nsamples = 21\nvalue = [14, 7]\nclass = Man of the Match", fillcolor="#e581397f"] ;
+1 -> 4 ;
+2 [label="gini = 0.45\nsamples = 41\nvalue = [14, 27]\nclass = No Man of the Match", fillcolor="#399de57b"] ;
+0 -> 2 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+}
